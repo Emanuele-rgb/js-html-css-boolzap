@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    #009688 0px,
+    #009688 15vh,
+    #d2dbdc 15vh,
+    #d2dbdc 100%
+    );
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  min-width: 900px;
+  height: 95%;
+  background: #fff;
+}
+
+.side {
+  width: 35%;
+  height: 100%;
+  background: #ccc;
+}
+
+.user-hotbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #EAEAEA;
+  height: 70px;
+  border-right: 1px solid lightgrey;
+}
+
+.content {
+  width: 65%;
+  height: 100%;
+  background: #aaa;
+}
+
+.chat {
+  height: 100%;
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  background-color: #EAEAEA;
+  height: 70px;
+}
+
+.user img {
+  height: 60px;
+  border-radius: 40px;
+  margin-top: 3px;
+  margin-left: 10px;
+}
+
+.user-hotbar img {
+  height: 60px;
+  border-radius: 40px;
+  margin-top: 3px;
+  margin-left: 10px;
+}
+
+.user-hotbar-icons {
+  margin-top: 25px;
+  margin-right: 15px;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.user-hotbar i {
+  font-size: 20px;
+  padding-right: 15px;
+}
+
+.user-info {
+  width: 800px;
+  margin-top: 15px;
+}
+
+.user-actions {
+  margin-top: 25px;
+  margin-right: 15px;
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-actions i {
+  font-size: 20px;
+}
+
+.text-background {
+  height: 90%;
+  background-image:url(img/mine.jpg);
+  background-size: auto;
+}
+
+.text-container {
+  padding-top: 70px;
+}
+
+.text-box {
+  width: 170px;
+  height: 50px;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-top: 15px;
+}
+
+.text-received {
+  margin-left: 15%;
+  width: 170px;
+  height: 50px;
+  background-color: white;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-top: 15px;
+}
+
+.text-sent {
+  margin-left: 70%;
+  width: 170px;
+  height: 50px;
+  background-color: #D5FABA;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-top: 15px;
+}
+
+.timestamp {
+  font-size: 10px;
+  text-align: right;
+  padding-right: 4px;
+}
+
+.notifications {
+  display: flex;
+  align-items: center;
+  background-color: #8EDAFD;
+  height: 80px;
+}
+
+.notifications i {
+  margin-left: 20px;
+  height:50px;
+  width: 50px;
+  font-size: 20px;
+  border-radius: 25px;
+  background-color: white;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.notification-text {
+  margin-left: 10px;
+}
+
+.notification-text p {
+  text-decoration: underline;
+}
