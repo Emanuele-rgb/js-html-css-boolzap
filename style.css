@@ -19,6 +19,10 @@ body {
     );
 }
 
+i {
+  color: #B1B1B1;
+}
+
 .container {
   display: flex;
   width: 80%;
@@ -30,7 +34,7 @@ body {
 .side {
   width: 35%;
   height: 100%;
-  background: #ccc;
+  background: white;
 }
 
 .user-hotbar {
@@ -65,6 +69,34 @@ body {
   margin-left: 10px;
 }
 
+.users-side {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  height: 80px;
+}
+
+.users-side:hover {
+  background-color: #EAEBEB;
+}
+
+.user p {
+  color: #B7B9BB
+}
+
+.users-side p {
+  color: #B7B9BB
+}
+
+
+
+.users-side img {
+  height: 60px;
+  border-radius: 40px;
+  margin-top: 6px;
+  margin-left: 10px;
+}
+
 .user-hotbar img {
   height: 60px;
   border-radius: 40px;
@@ -88,6 +120,12 @@ body {
 .user-info {
   width: 800px;
   margin-top: 15px;
+}
+
+.users-info {
+  width: 100%;
+  margin-top: 10px;
+  padding-left: 15px;
 }
 
 .user-actions {
@@ -146,12 +184,20 @@ body {
   padding-right: 4px;
 }
 
+.timestamp-side {
+  font-size: 10px;
+  text-align: right;
+  padding-right: 10px;
+  color: #B7B9BB;
+}
+
 .notifications {
   display: flex;
   align-items: center;
   background-color: #8EDAFD;
   height: 80px;
 }
+
 
 .notifications i {
   margin-left: 20px;
@@ -162,6 +208,7 @@ body {
   background-color: white;
   text-align: center;
   padding-top: 15px;
+  color: #8EDAFD;
 }
 
 .notification-text {
@@ -170,4 +217,43 @@ body {
 
 .notification-text p {
   text-decoration: underline;
+}
+
+.send-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 597px;
+  height: 70px;
+  background-color: #F3EEEB;
+}
+
+.send-area input{
+  width: 80%;
+  height: 50px;
+  border: none;
+  background-color: white;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+
+.send-area i {
+  font-size: 25px;
+}
+
+.search-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 50px;
+  background-color: white;
+}
+
+.search-area input{
+  width: 80%;
+  height: 30px;
+  border: none;
+  background-color: white;
+  border-radius: 10px;
+  padding-left: 20px;
 }
