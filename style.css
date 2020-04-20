@@ -23,6 +23,10 @@ i {
   color: #B1B1B1;
 }
 
+.template {
+  display: none;
+}
+
 .container {
   display: flex;
   width: 80%;
@@ -35,6 +39,7 @@ i {
   width: 35%;
   height: 100%;
   background: white;
+  overflow: auto;
 }
 
 .user-hotbar {
@@ -76,7 +81,7 @@ i {
   height: 80px;
 }
 
-.users-side:hover {
+.users-side:active {
   background-color: #EAEBEB;
 }
 
@@ -141,41 +146,38 @@ i {
 }
 
 .text-background {
-  height: 90%;
+  height: 85%;
   background-image:url(img/mine.jpg);
   background-size: auto;
+
 }
 
 .text-container {
   padding-top: 70px;
 }
 
-.text-box {
-  width: 170px;
-  height: 50px;
-  border-radius: 10px;
-  padding-left: 10px;
-  padding-top: 15px;
-}
+
 
 .text-received {
   margin-left: 15%;
   width: 170px;
   height: 50px;
-  background-color: white;
   border-radius: 10px;
   padding-left: 10px;
   padding-top: 15px;
+  background-color: white;
+
 }
 
 .text-sent {
-  margin-left: 70%;
+  margin-top: 20px;
   width: 170px;
   height: 50px;
-  background-color: #D5FABA;
   border-radius: 10px;
   padding-left: 10px;
   padding-top: 15px;
+  margin-left: 70%;
+  background-color: #D5FABA;
 }
 
 .timestamp {
@@ -196,6 +198,7 @@ i {
   align-items: center;
   background-color: #8EDAFD;
   height: 80px;
+  overflow: auto;
 }
 
 
@@ -220,10 +223,10 @@ i {
 }
 
 .send-area {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 597px;
   height: 70px;
   background-color: #F3EEEB;
 }
@@ -239,6 +242,7 @@ i {
 
 .send-area i {
   font-size: 25px;
+  cursor: pointer;
 }
 
 .search-area {
