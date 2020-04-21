@@ -7,6 +7,7 @@ $(document).ready(function() {
 var messageInput = $('.message-input');
 var sendIcon = $('.footer-icons.send i');
 var testoMessaggioBot = "Ok"
+var searchInput = $('.search-input')
 
 
 messageInput.on('focus blur', function(){
@@ -82,3 +83,20 @@ console.log(nuovoMessaggio)
         input.val('');
     }
 }
+
+
+searchInput.keyup(function() {
+
+  var search = $(this).val().toLowerCase().trim();
+
+  $('.users-side').each(function() {
+
+    var nomeContatto = $(this).find('.users-info h4').text().toLowerCase();
+
+    if(nomeContatto.includes(search)) {
+      $(this).show();
+    } else {
+      $(this).hide();
+    }
+  })
+})
